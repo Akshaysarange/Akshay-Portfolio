@@ -32,7 +32,7 @@ export default function Hero({ darkMode }) {
   }, [text, isDeleting, roleIndex])
 
   return (
-    <section id="home" className="scroll-mt-24 min-h-screen flex items-center justify-center relative overflow-hidden px-5 pt-24 pb-12">
+    <section id="home" className="scroll-mt-24 min-h-screen flex items-center justify-center relative overflow-hidden px-6 sm:px-10 lg:px-16 pt-24 pb-20">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(50)].map((_, i) => (
           <motion.div

@@ -5,7 +5,7 @@ export default function Footer({ darkMode }) {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className={`py-12 px-5 border-t ${darkMode ? 'border-white/10' : 'border-gray-200'}`}>
+    <footer className={`py-20 px-6 sm:px-10 lg:px-16 border-t ${darkMode ? 'border-white/10' : 'border-gray-200'}`}>
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center gap-4">
           <motion.a

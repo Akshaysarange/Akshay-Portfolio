@@ -6,19 +6,19 @@ export default function Contact({ darkMode }) {
   const [ref, inView] = useInView(0.2)
 
   return (
-    <section id="contact" className="scroll-mt-24 py-28 px-5 sm:px-8 lg:px-10 max-w-6xl mx-auto">
+    <section id="contact" className="scroll-mt-24 py-44 px-6 sm:px-10 lg:px-16 max-w-6xl mx-auto mb-16">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7 }}
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mt-10 mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mt-16 mb-4">
           Get In <span className="text-[#6c63ff]">Touch</span>
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-[#6c63ff] to-[#00d4ff] mx-auto mb-12 rounded-full" />
 
-        <div className={`p-8 sm:p-12 rounded-2xl border text-center ${
+        <div className={`p-10 sm:p-16 rounded-2xl border text-center ${
           darkMode ? 'bg-white/5 border-white/10' : 'bg-white border-gray-200 shadow-sm'
         }`}>
           <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-[#6c63ff]/20 flex items-center justify-center">
